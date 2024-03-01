@@ -5,9 +5,11 @@
 在 [release 页面](https://github.com/raphaeIl/KuroOverlay/releases) 下载 exe
 
 ## 使用
-双击 kuro_overlay.exe
+双击 `KuroOverlay.exe`
 
 点击 `t` (默认) 即可打开和关闭安定点提示页面
+
+[其他教程](#教程)
 
 ## 配置要求
 * windows pc （目前不支持手机）
@@ -18,13 +20,13 @@
 ## 展示
 页面
 
-![alt text](https://github.com/raphaeIl/KuroOverlay/preview/preview.png)
+![alt text](https://github.com/raphaeIl/KuroOverlay/blob/main/preview/preview.png)
 
-教程
+#### 教程
 
 据我自己测试，忍忍的技能需要放到下图显示的位置才能避免伤害
 
-![alt text](https://github.com/raphaeIl/KuroOverlay/preview/preview2.png)
+![alt text](https://github.com/raphaeIl/KuroOverlay/blob/main/preview/preview2.png)
 
 图因为是我扒的所以不太好 如果有大佬有更精准的图 球球发给我 ～(≧ ω ≦)
 
@@ -43,7 +45,7 @@
 - `overlay_opacity`: 页面透明度
 
 ## 注释
-目前(好像)只能用于ins难度
+目前(好像) 只能用于ins难度
 
 [安定点图](https://twitter.com/Midokuni_Mido/status/1575152057438261248) - 感谢 
 [Midokuni](https://twitter.com/Midokuni_Mido) 大佬
