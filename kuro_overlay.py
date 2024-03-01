@@ -33,16 +33,23 @@ class TransparentImageWidget(QWidget):
         self.setWindowFlags(Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.WindowTransparentForInput)
         self.setAttribute(Qt.WA_TranslucentBackground)
 
+        screen_size = QApplication.desktop().geometry()
+
+        self.SCREEN_WIDTH = screen_size.width()
+        self.SCREEN_HEIGHT = screen_size.height()
+
         # Overlay Image
         self.imageLabel = QLabel(self)
-        self.imageLabel.setGeometry(0, 0, 1920, 1080)
-        self.pixmap = QPixmap(resource_path("kuro_overlay.png"))
+        self.imageLabel.setGeometry(0, 0, self.SCREEN_WIDTH, self.SCREEN_HEIGHT)
+        print("Screen Size: ", screen_size)
+
+        self.pixmap = QPixmap(resource_path("kuro_overlay.png")).scaled(self.SCREEN_WIDTH, self.SCREEN_HEIGHT, Qt.KeepAspectRatio)
 
         self.updateImageOpacity()
         self.showFullScreen()
         
     def updateImageOpacity(self):
-        tempPixmap = QPixmap(self.pixmap.size())
+        tempPixmap = QPixmap(self.pixmap.size()).scaled(self.SCREEN_WIDTH, self.SCREEN_HEIGHT, Qt.KeepAspectRatio)
         tempPixmap.fill(Qt.transparent)
 
         painter = QPainter(tempPixmap)
@@ -53,7 +60,7 @@ class TransparentImageWidget(QWidget):
         self.imageLabel.setPixmap(tempPixmap)
 
     def switchImage(self, newImagePath):
-        self.pixmap = QPixmap(newImagePath)
+        self.pixmap = QPixmap(newImagePath).scaled(self.SCREEN_WIDTH, self.SCREEN_HEIGHT, Qt.KeepAspectRatio)
 
         self.updateImageOpacity()
 

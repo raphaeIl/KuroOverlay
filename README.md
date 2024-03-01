@@ -16,7 +16,7 @@
 ## 配置要求
 * windows pc （目前不支持手机）
 * 16:9 屏幕分辨率 (1920x1080最佳)
-* 蓝叠模拟器（其他的应该也可以）
+* 蓝叠模拟器 必须全屏（其他的应该也可以）
 * 首先你得能凹到 p2 ～(≧ ∇ ≦)/
 
 ## 展示
@@ -28,7 +28,9 @@
 
 #### 教程
 
-据我自己测试，忍忍的技能需要放到下图显示的位置才能避免伤害
+据我自己测试，忍忍的技能需要放到下图显示的位置才能避免伤害。
+
+建议开票前自己测试几遍 熟悉下位置，按自己习惯的位置来凹，不一定必须按我的教程。
 
 ![alt text](https://github.com/raphaeIl/KuroOverlay/blob/main/preview/preview2.png)
 
@@ -65,4 +67,4 @@
 ## ChangeLog
 `v0.0.1`: Initial Release
 
-`v0.0.2`: Added the ability to swap overlays
+`v0.0.2`: Added the ability to swap overlays, added support for all 16:9 screen resolutions
