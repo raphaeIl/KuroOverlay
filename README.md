@@ -5,7 +5,7 @@
 在 [release 页面](https://github.com/raphaeIl/KuroOverlay/releases) 下载 exe
 
 ## 使用
-双击 `KuroOverlay.exe`
+双击 `kuro_overlay.exe`
 
 点击 `t` (默认) 即可打开和关闭安定点提示页面
 
@@ -21,6 +21,8 @@
 页面
 
 ![alt text](https://github.com/raphaeIl/KuroOverlay/blob/main/preview/preview.png)
+
+[视频展示+教学](https://www.bilibili.com/video/BV1vu4m1w7oe)
 
 #### 教程
 
