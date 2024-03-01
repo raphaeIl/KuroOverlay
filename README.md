@@ -8,6 +8,7 @@
 双击 `kuro_overlay.exe`
 
 点击 `t` (默认) 即可打开和关闭安定点提示页面
+点击 `c` 可切换安定点图 (目前只有两张)
 
 [其他教程](#教程)
 
@@ -30,6 +31,8 @@
 
 ![alt text](https://github.com/raphaeIl/KuroOverlay/blob/main/preview/preview2.png)
 
+目前有两张图, 个人感觉第二张更稳, 可以都试试 那张用起来手感好就用那张
+
 图因为是我扒的所以不太好 如果有大佬有更精准的图 球球发给我 ～(≧ ω ≦)
 
 ## 自定义快捷键
@@ -39,11 +42,13 @@
 ```
 {
     "toggle_key": "t",
+    "switch_key": "c",
     "overlay_opacity": 0.5
 }
 ```
 
 - `toggle_key`: 开启/关闭 页面快捷键
+- `switch_key`: 切换安定点图
 - `overlay_opacity`: 页面透明度
 
 ## 注释
@@ -55,3 +60,8 @@
 作者：[Raphael](https://space.bilibili.com/1270793735) 
 
 脚本未修改任何游戏数据，可以放心使用，有问题请b站私信或开issues
+
+## ChangeLog
+`v0.0.1`: Initial Release
+
+`v0.0.2`: Added the ability to swap overlays

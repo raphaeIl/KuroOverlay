@@ -19,9 +19,11 @@ class TransparentImageWidget(QWidget):
             config = json.load(open(resource_path('config.json'), 'r'))
 
         self.toggle_key = config["toggle_key"]
+        self.switch_key = config["switch_key"]
         self.overlay_opacity = config["overlay_opacity"]
 
         self.opacity = 0
+        self.switched = False
         self.running = True
 
         self.initUIs()
@@ -50,12 +52,21 @@ class TransparentImageWidget(QWidget):
 
         self.imageLabel.setPixmap(tempPixmap)
 
+    def switchImage(self, newImagePath):
+        self.pixmap = QPixmap(newImagePath)
+
+        self.updateImageOpacity()
+
     def onKeyPressEvent(self): # Custom pynput
         def on_press(key):
             try:
                 if key.char == self.toggle_key:
                     self.opacity = self.overlay_opacity if self.opacity == 0 else 0
                     self.updateImageOpacity()
+                elif key.char == self.switch_key:
+                    self.switchImage(resource_path("kuro_overlay.png") if self.switched else resource_path("kuro_overlay_new.png"))
+                    self.switched = not self.switched
+
             except:
                 pass
             
